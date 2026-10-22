@@ -1,0 +1,198 @@
+{
+  "format": "rise-preview-plan",
+  "version": "1.0",
+  "language": "nb-NO",
+  "course": {
+    "title": "Gemba Walk",
+    "subtitle": "Gå dit arbeidet skjer, se med egne øyne, og forbedre sammen.",
+    "program": "BAMA LEAN-akademiet",
+    "prerequisite": "LEAN Hvit belte",
+    "description": "I dette kurset lærer du hva en Gemba Walk er, hvorfor vi bruker den, og hvordan den gjennomføres i praksis.",
+    "learningObjectives": [
+      "Forklare hva en Gemba Walk er og hva begrepet Gemba betyr.",
+      "Forklare prinsippet bak Gemba, Gembutsu og Genjitsu.",
+      "Beskrive hvorfor vi gjennomfører Gemba Walk.",
+      "Gjennomføre en Gemba Walk fra planlegging til oppfølging.",
+      "Stille åpne spørsmål og observere prosessen uten å fokusere på enkeltpersoner.",
+      "Identifisere vanlige feil som bør unngås.",
+      "Forklare hvordan Gemba Walk henger sammen med Kaizen og PDCA."
+    ]
+  },
+  "sections": [
+    {
+      "id": "forberedelser",
+      "title": "Før du starter",
+      "blocks": [
+        {
+          "id": "forkunnskaper",
+          "type": "text",
+          "riseBlock": "text",
+          "title": "Forkunnskaper",
+          "text": "Kurset bygger videre på LEAN Hvit belte. Før du starter, bør du kjenne til sløsing (muda), standardisert arbeid, 5S, PDCA og respekt for mennesker.",
+          "reason": "Kort introduksjon med én hovedidé passer som vanlig tekst."
+        },
+        {
+          "id": "grunnbegreper",
+          "type": "accordion",
+          "riseBlock": "accordion",
+          "title": "Grunnbegreper fra LEAN Hvit belte",
+          "items": [
+            {"title": "Sløsing (muda)", "text": "Aktiviteter som ikke skaper verdi for kunden, for eksempel venting, overproduksjon, transport, bevegelse, feil eller omarbeid, overflødig lager og overprosessering."},
+            {"title": "Standardisert arbeid", "text": "Den best kjente måten å utføre en oppgave på i dag. Den gir oss et referansepunkt å observere prosessen opp mot."},
+            {"title": "5S", "text": "Sortere, Systematisere, Skinne, Standardisere og Sikre. Orden og ryddighet gjør avvik lettere å se."},
+            {"title": "PDCA", "text": "Plan–Do–Check–Act: arbeidsmåten for kontinuerlig forbedring (Kaizen)."},
+            {"title": "Respekt for mennesker", "text": "En av LEANs to bærebjelker, sammen med kontinuerlig forbedring."}
+          ],
+          "reason": "Dette er flere korte forklaringer som kan åpnes én om gangen."
+        }
+      ]
+    },
+    {
+      "id": "fagstoff",
+      "title": "Hva er en Gemba Walk?",
+      "blocks": [
+        {
+          "id": "gemba-intro",
+          "type": "text",
+          "riseBlock": "text",
+          "title": "Gå dit arbeidet skjer",
+          "text": "Gemba er japansk for «det virkelige stedet» – stedet der verdiskapende arbeid faktisk skjer, som i produksjonshallen, på lageret, i pakkeriet eller ute hos kunden. En Gemba Walk er en planlagt runde der ledere og medarbeidere går dit arbeidet skjer for å observere prosessen, stille spørsmål og forstå virkeligheten med egne øyne.",
+          "reason": "Et sentralt begrep forklares best først med en tydelig tekstblokk."
+        },
+        {
+          "id": "tre-g-er",
+          "type": "tabs",
+          "riseBlock": "tabs",
+          "title": "De tre G-ene",
+          "items": [
+            {"title": "Gemba", "text": "Det virkelige stedet der arbeidet skjer."},
+            {"title": "Gembutsu", "text": "Den faktiske tingen: produktet, materialet, verktøyet eller utstyret som er involvert."},
+            {"title": "Genjitsu", "text": "De faktiske fakta og data om situasjonen."}
+          ],
+          "closingText": "Genchi Genbutsu betyr å gå og se selv, for å forstå situasjonen slik den faktisk er – ikke bare slik den beskrives på et møte.",
+          "reason": "Tre begreper med lik struktur egner seg til faner, slik at eleven kan utforske dem hver for seg."
+        },
+        {
+          "id": "hvorfor-gemba-walk",
+          "type": "list",
+          "riseBlock": "bulleted-list",
+          "title": "Hvorfor gjennomfører vi Gemba Walk?",
+          "items": [
+            "For å forstå prosessen slik den faktisk fungerer, ikke bare slik den er beskrevet på papiret.",
+            "For å oppdage sløsing, flaskehalser og risiko før de blir store problemer.",
+            "For å vise interesse og respekt for medarbeiderne som utfører arbeidet hver dag.",
+            "For å hente forbedringsideer fra dem som kjenner prosessen best.",
+            "For å undersøke om standardisert arbeid følges, og forstå hvorfor hvis det ikke gjør det."
+          ],
+          "reason": "Dette er en samling likeverdige grunner som er lett å skanne som punktliste."
+        },
+        {
+          "id": "god-gemba-walk",
+          "type": "accordion",
+          "riseBlock": "accordion",
+          "title": "Prinsipper for en god Gemba Walk",
+          "items": [
+            {"title": "Ha et tydelig fokus", "text": "Bestem hva du skal se etter før du går, for eksempel sikkerhet, kvalitet, flyt eller 5S."},
+            {"title": "Observer først, konkluder sist", "text": "Se på prosessen, ikke på personen."},
+            {"title": "Still åpne spørsmål", "text": "Spør for eksempel: «Hva skjer her?», «Hvorfor gjøres det på denne måten?» og «Hva hindrer deg i arbeidet ditt?»"},
+            {"title": "Vis respekt", "text": "Du er der for å lære av dem som jobber i prosessen, ikke for å kontrollere dem."},
+            {"title": "Ikke forstyrr eller kritiser", "text": "Unngå å avbryte arbeidet unødvendig eller kritisere enkeltpersoner på stedet."},
+            {"title": "Se på prosessen og systemet", "text": "Mange avvik skyldes hvordan arbeidet er lagt opp, ikke én enkelt medarbeider."}
+          ],
+          "reason": "Hvert prinsipp har en kort overskrift og forklaring, så eleven kan åpne dem etter behov."
+        },
+        {
+          "id": "roller",
+          "type": "cards",
+          "riseBlock": "cards",
+          "title": "Roller og deltakere",
+          "items": [
+            {"title": "Leder eller gjennomfører", "text": "Planlegger og leder runden, stiller spørsmål og noterer observasjoner."},
+            {"title": "Medarbeidere i prosessen", "text": "Viser og forklarer arbeidet sitt, og deler utfordringer og forslag."},
+            {"title": "Observatør eller notatfører", "text": "Kan skrive ned observasjoner, slik at lederen får være til stede i samtalen."}
+          ],
+          "reason": "Tre ulike roller med korte beskrivelser kan vises som sammenlignbare kort."
+        },
+        {
+          "id": "steg-for-steg",
+          "type": "steps",
+          "riseBlock": "process",
+          "title": "Gjennomføring steg for steg",
+          "items": [
+            {"title": "Planlegg", "text": "Definer fokusområde, velg rute eller avdeling, og bestem tidspunkt."},
+            {"title": "Informer", "text": "Fortell medarbeiderne hvorfor runden gjennomføres, så den ikke oppleves som en overraskelseskontroll."},
+            {"title": "Observer", "text": "Gå til gemba og se på prosessen i praksis. Legg merke til flyt, avvik og arbeidsforhold."},
+            {"title": "Spør og lytt", "text": "Still åpne spørsmål og lytt aktivt til svarene."},
+            {"title": "Noter", "text": "Skriv ned konkrete observasjoner og forslag, ikke bare generelle inntrykk."},
+            {"title": "Takk", "text": "Avslutt runden med å takke for tiden og innspillene."},
+            {"title": "Følg opp", "text": "Oppsummer funn, avtal tiltak, ansvarlig og frist, og gi tilbakemelding til de involverte."}
+          ],
+          "reason": "Dette er en rekkefølge med sju handlinger, så en stegvis blokk viser prosessen tydelig."
+        },
+        {
+          "id": "vanlige-feil",
+          "type": "accordion",
+          "riseBlock": "accordion",
+          "title": "Vanlige feil å unngå",
+          "items": [
+            {"title": "Gå uten et klart formål", "text": "Bestem fokusområdet før runden starter."},
+            {"title": "Kritisere enkeltpersoner", "text": "Bruk runden til å forstå prosessen, ikke til å irettesette medarbeidere."},
+            {"title": "Forstyrre arbeidet", "text": "Ikke avbryt unødvendig eller bli stående i veien."},
+            {"title": "Glemme oppfølging", "text": "Observasjoner bør følges opp med tiltak og tilbakemelding."},
+            {"title": "Gå for sjelden", "text": "Regelmessige runder gjør forbedring til en del av arbeidskulturen."}
+          ],
+          "reason": "Feilene er korte og uavhengige av hverandre, så de passer i en oversiktlig trekkspillblokk."
+        },
+        {
+          "id": "kaizen-pdca",
+          "type": "text",
+          "riseBlock": "text",
+          "title": "Sammenheng med Kaizen og PDCA",
+          "text": "Gemba Walk er et verktøy for å samle faktiske observasjoner som kontinuerlig forbedring (Kaizen) bygger på. Funnene brukes i PDCA-hjulet: Planlegg et tiltak ut fra det du har sett, prøv det ut, sjekk effekten, og standardiser det som fungerer.",
+          "reason": "Dette er en kort forklaring som knytter sammen hovedideene i kurset."
+        }
+      ]
+    },
+    {
+      "id": "oppsummering",
+      "title": "Oppsummering",
+      "blocks": [
+        {
+          "id": "viktigste-punkter",
+          "type": "list",
+          "riseBlock": "bulleted-list",
+          "title": "Dette bør du huske",
+          "items": [
+            "Gemba betyr det virkelige stedet der verdiskapende arbeid skjer.",
+            "Genchi Genbutsu betyr å gå og se selv: forstå stedet, den faktiske tingen og de faktiske faktaene.",
+            "Formålet er å forstå prosessen, finne sløsing og risiko, og vise respekt for medarbeiderne.",
+            "Planlegg fokusområde, rute og tidspunkt før runden.",
+            "Observer prosessen og systemet. Still åpne spørsmål og lytt.",
+            "Skriv ned konkrete observasjoner, følg opp med tiltak og gi tilbakemelding.",
+            "Regelmessige Gemba Walks støtter Kaizen og PDCA og bidrar til en kultur for forbedring."
+          ],
+          "reason": "Oppsummeringen består av korte hovedpunkter som passer i en liste."
+        }
+      ]
+    },
+    {
+      "id": "kunnskapstest",
+      "title": "Kunnskapstest",
+      "blocks": [
+        {
+          "id": "quiz-status",
+          "type": "text",
+          "riseBlock": "text",
+          "title": "Test det du har lært",
+          "text": "Kursbeskrivelsen sier at kunnskapstesten skal ha 15 spørsmål med fire svaralternativer. Noen spørsmål kan ha ett riktig svar, mens andre kan ha flere riktige svar.",
+          "reason": "Testformatet er oppgitt, men Word-filen som ble levert inneholder ikke den fullstendige listen med 15 spørsmål."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Denne testfila er en strukturert forhåndsvisningsplan, ikke en fil som kan importeres direkte i Articulate Rise.",
+    "Word-dokumentet oppgir at kunnskapstesten har 15 spørsmål, men vedlegget som ble mottatt stopper ved starten av spørsmål 1. Derfor er ingen manglende quizspørsmål funnet på.",
+    "Blokktypene er forslag basert på innholdets form. brukeren bør kunne endre blokktypen før kopiering."
+  ]
+}

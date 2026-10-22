@@ -1,0 +1,6 @@
+interface:
+  display_name: "Word til Rise-plan"
+  short_description: "Lag .riseplan fra kursinnhold i Word"
+  default_prompt: "Les det vedlagte Word-kursmaterialet og lag en validert .riseplan-fil for forhåndsvisning."
+policy:
+  allow_implicit_invocation: true

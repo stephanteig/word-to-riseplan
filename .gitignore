@@ -1,0 +1,13 @@
+# Locally generated install bundle; build it when needed.
+riseplan-skill/word-to-riseplan.skill.zip
+
+# Python cache files.
+**/__pycache__/
+*.py[cod]
+
+# Common local secrets and machine settings.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
