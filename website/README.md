@@ -1,33 +1,37 @@
 # Rise-kursforhåndsvisning
 
-En enkel nettside som leser `.riseplan`-filer som JSON direkte i nettleseren. Opplastet fil sendes ikke til en server. Innholdet vises som kursseksjoner og Rise-lignende blokker med egne tekstkopieringsknapper.
+En responsiv nettside som leser `.riseplan` JSON-filer lokalt i nettleseren og viser dem som kurs med kopierbare tekstfelt. Opplastede filer sendes ikke til en server.
 
-## Åpne nettsiden
+## Last ned
 
-1. Installer Node.js hvis det ikke allerede finnes på maskinen.
-2. Åpne PowerShell i denne prosjektmappen.
-3. Kjør `node server.js`.
-4. Åpne adressen som vises, normalt `http://localhost:4173`.
+[Nettside-ZIP v1.0.0](https://github.com/stephanteig/word-to-riseplan/releases/download/v1.0.0/word-to-riseplan-website-v1.0.0.zip) inneholder bare nettsideprosjektet. [Siste release](https://github.com/stephanteig/word-to-riseplan/releases/tag/v1.0.0) har også skill-ZIP og samlet ZIP.
 
-Du kan også åpne `index.html` direkte i en moderne nettleser. En lokal webserver gir best støtte for alle nettleserfunksjoner.
+## Start lokalt
 
-## Bruke nettsiden
+1. Installer Node.js hvis det ikke finnes på maskinen.
+2. Pakk ut nettside-ZIP-en til en ny mappe.
+3. Åpne PowerShell eller en terminal i mappa som inneholder `server.js`.
+4. Kjør `node server.js`.
+5. Åpne adressen som vises, vanligvis `http://localhost:4173`.
 
-- Slipp en `.riseplan`-fil på opplastingsfeltet, eller trykk der for å velge en fil.
-- Filen leses lokalt i nettleseren. Støttet format er `rise-preview-plan`, versjon `1.0`.
-- Kursoversikten viser tittel, undertittel, program, forkunnskapskrav, beskrivelse og læringsmål når de finnes.
-- Bruk kursdelene i kontrollpanelet til å hoppe i innholdet.
-- Endre foreslått blokk i nedtrekksmenyen. Det endrer bare forhåndsvisningen, ikke kildefilen.
-- Bruk «Kopier tekst» på felt, faner, trekkspillinnhold, kort og steg. Punktlister har en knapp for alle punktene.
+Nettsiden har ingen npm-avhengigheter eller egen build-kommando. Du kan også åpne `index.html` direkte i en nettleser, men en lokal server gir best støtte. Bruk `http://localhost:4173/?test=1` for automatisk Gemba-eksempelvisning.
 
-## Testdata
+## Bruk
 
-`gemba-walk-test.riseplan` er testfila som fulgte prosjektoppgaven. Med serveren startet kan `http://localhost:4173/?test=1` brukes til å laste testfila automatisk i nettleseren. Uten `?test=1` åpnes vanlig opplastingsvisning.
+- Slipp `.riseplan`-fila på opplastingsfeltet eller trykk for å velge den.
+- Støttet format er `rise-preview-plan`, versjon `1.0`.
+- Naviger mellom kursdelene med oversikten i kontrollpanelet.
+- Endre foreslått blokk i menyen. Det påvirker bare visningen.
+- Kopier tekst fra felt, faner, trekkspillinnhold, kort og steg. Punktlister har en knapp for alle punktene.
 
-## Filer
+## Begrensninger
 
-- `index.html` – nettsidens innhold og struktur.
-- `styles.css` – utforming for mobil og datamaskin.
-- `app.js` – opplasting, validering, kursvisning og kopiering.
-- `server.js` – liten lokal server uten eksterne avhengigheter.
-- `gemba-walk-test.riseplan` – eksempel- og testdata.
+Quizspørsmål vises som tekst, ikke som en interaktiv quiz. Innholdet og kildeangitte svar er bevart i `.riseplan`, men ukjente quizfelter brukes ikke i visningen.
+
+## Installer med ChatGPT
+
+Kopier prompten og lim den inn i ChatGPT etter at du har lastet ned nettside-ZIP-en. Hvis fila ikke finnes i prosjektmappa eller Nedlastinger, spør ChatGPT hvor den ligger.
+
+```text
+Hjelp meg å sette opp og starte Rise-kursforhåndsvisningen. Finn den nedlastede nettside-ZIP-en i Nedlastinger eller den åpne prosjektmappa; spør meg hvor den ligger hvis du ikke finner den. Pakk den ut til en ny mappe som ikke finnes fra før, les README.md i den utpakkede mappa og følg instruksjonene der. Forklar enkelt at Node.js trengs, start serveren lokalt, vis adressen jeg skal åpne, og hjelp med vanlige oppstartsfeil som Node.js som mangler eller en opptatt port. Ikke slett, flytt eller overskriv noen av filene mine. Ikke publiser eller deploy nettsiden.
+```
